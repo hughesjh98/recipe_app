@@ -1,2 +1,4 @@
-.mysql
-.mysqlclient
+*.bak
+
+*.mysql
+*.mysqlclient
