@@ -3,9 +3,10 @@ from .models import User, Recipe
 
 class UserModelTest(TestCase):
     def setUpTestData():
-        recipe = Recipe.objects.create(name = 'sandwich', cooking_time = 25, 
-                              difficulty = 'easy', ingredients = 'bread,ham,tomatoes,cheese', 
-                              description = 'this is the best sandwich of your life.' )
+        recipe = Recipe.objects.create(name = 'sandwich',
+                                       cooking_time = 25, 
+                                       ingredients = 'bread,ham,tomatoes,cheese,mayo', 
+                                       description = 'this is the best sandwich of your life.' )
         recipe.save()
         user = User.objects.create(name = 'harry', saved_recipes = recipe)
         user.save()

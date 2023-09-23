@@ -8,4 +8,4 @@ class User(models.Model):
     saved_recipes = models.ForeignKey(Recipe, on_delete = models.CASCADE)
     
     def __str__(self):
-        return f" {self.name}, saved recipes: {self.saved_recipes.name}"
+        return f" {self.name}, saved recipes: {self.saved_recipes.first().name}"

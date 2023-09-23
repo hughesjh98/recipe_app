@@ -1,13 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href=" {% static 'recipes/css/styles.css' %} ">
     <title>Recipes Home</title>
 </head>
-<body>
-    <h1>
-        Home of the Recipes
-    </h1>
+
+<body class="home-background">
+    <section class="home-container">
+        <h1>
+            Home of the Recipes
+        </h1>
+        <h2>
+            <a href="/recipes/list"> enter</a>
+        </h2>
+    </section>
 </body>
+
 </html>

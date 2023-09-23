@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href=" {% static 'recipes/css/styles.css' %} ">
+    <title>Recipes details</title>
+</head>
+
+<body>
+    <section class="details-section">
+        <div class="details-card">
+            <img class="details-card-img" src="{{object.pictures.url}}" alt="recipe-img">
+            <div class="details-container">
+                <h1> {{object.name}} </h1>
+                <br>
+                <h2> {{object.calc_difficulty}} </h2>
+                <br>
+                <h2> {{object.cooking_time}} minutes</h2>
+                <br>
+                <h2> {{object.ingredients}} </h2>
+                <br>
+                <h1> {{object.description}} </h3>
+                    <a href="/recipes/list"> back</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

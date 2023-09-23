@@ -1,0 +1,68 @@
+body {
+    background-image: url(" /static/recipes/images/cutting_board.jpg");
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+
+}
+
+.card-img {
+    height: 60%;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.details-section {
+    display: flex;
+    place-content: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.details-card {
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.details-card-img {
+    border-radius: 15px;
+    height: 60%;
+    width: 80%;
+}
+
+.details-container{
+    text-align: left;
+   margin: 20px;   
+
+}
