@@ -1,13 +1,13 @@
 body {
-    background-image: url(" /static/recipes/images/cutting_board.jpg");
+    background: url(" /static/recipes/images/cutting_board.jpg");
 }
 
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 100px;
-    
+
 }
 
 .recipe-container {
@@ -61,8 +61,8 @@ body {
     width: 80%;
 }
 
-.details-container{
+.details-container {
     text-align: left;
-   margin: 20px;   
+    margin: 20px;
 
 }

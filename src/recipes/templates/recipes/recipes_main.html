@@ -10,7 +10,14 @@
 </head>
 
 <body>
-    <h1>Recipes' List</h1>
+
+    <header class="header-container">
+        <h1>recipes list</h1>
+        <nav>
+            <a href="{%url 'logout' %}">logout </a>
+        </nav>
+    </header>
+
     <section class="recipe-container">
         {% for object in object_list %}
         <div class="card">
