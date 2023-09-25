@@ -6,11 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href=" {% static 'recipes/css/styles.css' %} ">
-    <title>Document</title>
+    <title>Logout</title>
 </head>
+<style>
+.success-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+</style>
 
 <body>
-    <h1>you've been logged out</h1>
+    <section class="success-container">
+        <h1>you've been logged out</h1>
+        <a href="recipes">head back to the home page</a>
+    </section>
 </body>
 
 </html>

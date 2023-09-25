@@ -1,14 +1,38 @@
-<h1>Login</h1>          {% comment %} print heading {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% comment %} check for error message {% endcomment %}
-{% if error_message %}
-   {{error_message}}
-{% endif %}
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel='stylesheet' type='text/css' href=" {% static 'recipes/css/styles.css' %} ">
+   <title>Login</title>
+</head>
+<style>
+   .login-container {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       padding-top: 100px;
+   }
+   </style>
 
-<form action="" method="POST" >
-   {% csrf_token %}   
+<body>
+   <section class="login-container">
+      <h1>Login</h1>
 
-   {{form}}           
+      {% if error_message %}
+      {{error_message}}
+      {% endif %}
 
-   <button type="submit" >Login</button>
-</form>
+      <form action="" method="POST">
+         {% csrf_token %}
+
+         {{form}}
+
+         <button type="submit">Login</button>
+      </form>
+   </section>
+</body>
+
+</html>

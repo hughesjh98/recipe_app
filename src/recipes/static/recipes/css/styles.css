@@ -2,14 +2,16 @@ body {
     background: url(" /static/recipes/images/cutting_board.jpg");
 }
 
+/* recipes home */
 .home-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 100px;
-
 }
 
+
+/* recipes details */
 .recipe-container {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +26,7 @@ body {
     height: 300px;
     width: 300px;
     margin: 20px;
-
+    
 }
 
 .card-img {
@@ -64,5 +66,5 @@ body {
 .details-container {
     text-align: left;
     margin: 20px;
-
+    
 }
